@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Celestial Codex: Sinhaa vs The Mortal Veil</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -17,12 +17,13 @@
             background: #000;
             color: #e0e0ff;
             min-height: 100vh;
-            padding: 20px;
             overflow-x: hidden;
             position: relative;
             background: radial-gradient(ellipse at bottom, #0a0f1a 0%, #000000 100%);
-            padding-bottom: 80px;
+            padding-bottom: 10vh;
             cursor: none;
+            font-size: clamp(14px, 3vmin, 18px);
+            line-height: 1.6;
         }
 
         .celestial-container {
@@ -110,8 +111,8 @@
 
         .divine-moon {
             position: absolute;
-            width: 18vw;
-            height: 18vw;
+            width: 20vw;
+            height: 20vw;
             max-width: 180px;
             max-height: 180px;
             background: radial-gradient(circle at 30% 30%, #f5f0d0, #d4c8a8);
@@ -120,7 +121,7 @@
                 0 0 6vw #f5f0d0,
                 0 0 12vw rgba(245, 240, 208, 0.3),
                 0 0 18vw rgba(245, 240, 208, 0.1);
-            top: 12vh;
+            top: 15vh;
             right: 8vw;
             animation: divine-float 30s infinite ease-in-out;
             z-index: 2;
@@ -148,30 +149,30 @@
         }
 
         .orb-1 {
-            width: 8vw;
-            height: 8vw;
+            width: 10vw;
+            height: 10vw;
             max-width: 80px;
             max-height: 80px;
             background: radial-gradient(circle at 30% 30%, #4a6fa5, #1a2a4a);
-            top: 20vh;
-            left: 12vw;
+            top: 22vh;
+            left: 10vw;
             animation: divine-float 40s infinite linear reverse;
         }
 
         .orb-2 {
-            width: 6vw;
-            height: 6vw;
+            width: 7vw;
+            height: 7vw;
             max-width: 60px;
             max-height: 60px;
             background: radial-gradient(circle at 30% 30%, #e74c3c, #8b2525);
-            bottom: 15vh;
-            right: 22vw;
+            bottom: 18vh;
+            right: 20vw;
             animation: divine-float 35s infinite linear;
         }
 
         .divine-text {
             position: absolute;
-            font-size: 1.4vw;
+            font-size: 1.6vw;
             max-font-size: 14px;
             opacity: 0.05;
             white-space: nowrap;
@@ -222,18 +223,18 @@
         }
 
         .container {
-            max-width: 90vw;
+            max-width: 95vw;
             margin: 0 auto;
-            padding: 4vh 4vw;
+            padding: 5vh 2.5vw;
             position: relative;
             z-index: 3;
             background: rgba(10, 15, 30, 0.85);
-            border-radius: 2.5vw;
+            border-radius: 3vw;
             backdrop-filter: blur(1.5vw);
             box-shadow: 0 2vw 6vw rgba(0, 0, 0, 0.8);
             border: 0.2vw solid rgba(100, 100, 255, 0.2);
             overflow: hidden;
-            margin-bottom: 20px;
+            margin-bottom: 4vh;
             border-image: linear-gradient(45deg, #60a5fa, #8b5cf6, #ec4899, #60a5fa) 1;
         }
 
@@ -256,12 +257,12 @@
 
         header {
             text-align: center;
-            padding: 6vh 0 4vh;
+            padding: 8vh 0 5vh;
             position: relative;
         }
 
         h1 {
-            font-size: clamp(2rem, 6.5vmin, 3.5rem);
+            font-size: clamp(2rem, 7vmin, 3.5rem);
             margin-bottom: 2.5vh;
             color: #d4e6f1;
             letter-spacing: -0.1em;
@@ -292,7 +293,7 @@
             font-size: clamp(1.2rem, 4vmin, 1.8rem);
             color: #a0c4e6;
             font-style: italic;
-            margin-bottom: 5vh;
+            margin-bottom: 6vh;
             letter-spacing: 0.1em;
             text-shadow: 0 0 2vw rgba(160, 196, 230, 0.3);
         }
@@ -324,7 +325,7 @@
 
         .divine-comparison-table th {
             background: rgba(25, 35, 65, 0.9);
-            padding: 2.2vh 2.2vw;
+            padding: 2.5vh 2vw;
             text-align: center;
             font-size: clamp(1rem, 4vmin, 1.5rem);
             color: #d4e6f1;
@@ -341,7 +342,7 @@
         }
 
         .divine-comparison-table td {
-            padding: 2vh 2vw;
+            padding: 2.5vh 2vw;
             text-align: center;
             vertical-align: middle;
             border-bottom: 0.2vw solid rgba(212, 230, 241, 0.1);
@@ -368,8 +369,8 @@
         }
 
         .divine-avatar-container {
-            width: 12vw;
-            height: 12vw;
+            width: 14vw;
+            height: 14vw;
             max-width: 120px;
             max-height: 120px;
             border-radius: 50%;
@@ -399,9 +400,9 @@
         }
 
         .divine-feature-list li {
-            padding: 1.5vh 2vw;
-            margin-bottom: 1.2vh;
-            border-radius: 1.2vw;
+            padding: 2vh 2.5vw;
+            margin-bottom: 1.5vh;
+            border-radius: 1.5vw;
             background: rgba(160, 196, 230, 0.1);
             display: flex;
             align-items: center;
@@ -431,8 +432,8 @@
         .divine-final-result {
             background: rgba(25, 35, 65, 0.85);
             border-radius: 2vw;
-            padding: 4vh 4vw;
-            margin: 6vh 0;
+            padding: 6vh 4vw;
+            margin: 8vh 0;
             text-align: center;
             box-shadow: 0 2vw 6vw rgba(0, 0, 0, 0.7);
             border: 0.2vw solid rgba(212, 230, 241, 0.2);
@@ -466,24 +467,25 @@
 
         .divine-final-text {
             font-size: clamp(1.2rem, 4vmin, 1.6rem);
-            line-height: 1.8;
+            line-height: 1.9;
             color: #c0d4e8;
             font-style: italic;
             margin-top: 2vh;
             text-shadow: 0 0 1.5vw rgba(192, 212, 232, 0.3);
+            padding: 0 2vw;
         }
 
         .divine-signature {
             font-family: 'Dancing Script', cursive;
             font-size: clamp(1.6rem, 5vmin, 2.5rem);
-            margin-top: 3.5vh;
+            margin-top: 4vh;
             color: #60a5fa;
             text-shadow: 0 0.3vw 1vw rgba(96, 165, 250, 0.6);
         }
 
         .divine-crafted-by {
             text-align: center;
-            margin-top: 5vh;
+            margin-top: 6vh;
             font-size: clamp(0.9rem, 3.2vmin, 1.2rem);
             color: #a0c4e6;
             font-style: italic;
@@ -636,45 +638,64 @@
             50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.1); }
         }
 
+        /* MOBILE OPTIMIZATION: Touch devices */
         @media (hover: none) and (pointer: coarse) {
             .divine-cursor,
             .divine-cursor-follower {
                 display: none !important;
             }
             body { cursor: default; }
+            .container {
+                padding: 6vh 3vw;
+            }
+            .divine-feature-list li {
+                padding: 2.5vh 3vw;
+                font-size: clamp(0.9rem, 3.5vmin, 1.2rem);
+            }
+            .divine-final-text {
+                font-size: clamp(1.2rem, 4.5vmin, 1.7rem);
+                padding: 0 3vw;
+            }
+            .divine-moon {
+                width: 22vw;
+                height: 22vw;
+                top: 12vh;
+                right: 5vw;
+            }
+            .orb-1, .orb-2 {
+                display: none;
+            }
+            .nebula {
+                display: none;
+            }
+            .constellation {
+                display: none;
+            }
+            .divine-text {
+                display: none;
+            }
         }
 
-        @media (max-width: 768px) {
+        /* Ensure table fits on small screens */
+        @media (max-width: 480px) {
             .comparison-container {
                 flex-direction: column;
             }
-
             .divine-comparison-table {
-                font-size: 0.8em;
+                font-size: 0.9em;
+                width: 100%;
             }
-
+            .divine-comparison-table th,
             .divine-comparison-table td {
-                padding: 1.5vh 1vw;
+                padding: 2vh 1.5vw !important;
+                font-size: clamp(0.8rem, 3vmin, 1.1rem) !important;
             }
-
-            h1 {
-                font-size: 2.5rem;
+            .sequence-cell {
+                font-size: clamp(1rem, 3.2vmin, 1.3rem) !important;
             }
-            .divine-subtitle {
-                font-size: 1.3rem;
-            }
-            .divine-final-text {
-                font-size: 1.3rem;
-            }
-            .divine-signature {
-                font-size: 2rem;
-            }
-
-            .divine-moon {
-                width: 12vw;
-                height: 12vw;
-                top: 8vh;
-                right: 5vw;
+            .divine-avatar-container {
+                width: 16vw;
+                height: 16vw;
             }
         }
     </style>
@@ -684,10 +705,10 @@
         <div class="stars" id="stars"></div>
 
         <div class="divine-moon" id="divine-moon">
-            <div class="moon-crater" style="width: 2vw; height: 2vw; top: 3vw; left: 3.5vw;"></div>
-            <div class="moon-crater" style="width: 1.5vw; height: 1.5vw; top: 6vw; right: 2.5vw;"></div>
-            <div class="moon-crater" style="width: 1.8vw; height: 1.8vw; bottom: 2vw; left: 4vw;"></div>
-            <div class="moon-crater" style="width: 1.2vw; height: 1.2vw; top: 9vw; left: 6vw;"></div>
+            <div class="moon-crater" style="width: 2.2vw; height: 2.2vw; top: 3.2vw; left: 3.8vw;"></div>
+            <div class="moon-crater" style="width: 1.6vw; height: 1.6vw; top: 6.5vw; right: 2.8vw;"></div>
+            <div class="moon-crater" style="width: 2vw; height: 2vw; bottom: 2.2vw; left: 4.2vw;"></div>
+            <div class="moon-crater" style="width: 1.3vw; height: 1.3vw; top: 9.2vw; left: 6.2vw;"></div>
         </div>
 
         <div class="cosmic-orb orb-1"></div>
@@ -838,82 +859,71 @@
     <div class="divine-cursor-follower"></div>
 
     <script>
-        // Generate divine stars in the background
         document.addEventListener('DOMContentLoaded', function() {
             const starsContainer = document.getElementById('stars');
-            const starCount = 300; // More stars for divine density
+            const starCount = 300;
 
-            // Create constellations
-            for (let i = 0; i < 5; i++) {
-                const constellation = document.createElement('div');
-                constellation.className = 'constellation';
-                constellation.style.left = `${Math.random() * 100}%`;
-                constellation.style.top = `${Math.random() * 100}%`;
-                constellation.style.animationDelay = `${Math.random() * 20}s`;
+            // Create constellations (only on desktop)
+            if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+                for (let i = 0; i < 5; i++) {
+                    const constellation = document.createElement('div');
+                    constellation.className = 'constellation';
+                    constellation.style.left = `${Math.random() * 100}%`;
+                    constellation.style.top = `${Math.random() * 100}%`;
+                    constellation.style.animationDelay = `${Math.random() * 20}s`;
 
-                // Create stars within constellation
-                for (let j = 0; j < 8; j++) {
-                    const star = document.createElement('div');
-                    star.className = 'constellation-star';
-                    star.style.left = `${Math.random() * 100}%`;
-                    star.style.top = `${Math.random() * 100}%`;
-                    star.style.animation = `twinkle ${2 + Math.random() * 3}s infinite ease-in-out`;
-                    constellation.appendChild(star);
+                    for (let j = 0; j < 8; j++) {
+                        const star = document.createElement('div');
+                        star.className = 'constellation-star';
+                        star.style.left = `${Math.random() * 100}%`;
+                        star.style.top = `${Math.random() * 100}%`;
+                        star.style.animation = `twinkle ${2 + Math.random() * 3}s infinite ease-in-out`;
+                        constellation.appendChild(star);
 
-                    // Create lines connecting stars
-                    if (j > 0) {
-                        const line = document.createElement('div');
-                        line.className = 'constellation-line';
-                        line.style.width = `${Math.random() * 5 + 2}vw`;
-                        line.style.left = `${Math.random() * 100}%`;
-                        line.style.top = `${Math.random() * 100}%`;
-                        line.style.transform = `rotate(${Math.random() * 360}deg)`;
-                        constellation.appendChild(line);
+                        if (j > 0) {
+                            const line = document.createElement('div');
+                            line.className = 'constellation-line';
+                            line.style.width = `${Math.random() * 5 + 2}vw`;
+                            line.style.left = `${Math.random() * 100}%`;
+                            line.style.top = `${Math.random() * 100}%`;
+                            line.style.transform = `rotate(${Math.random() * 360}deg)`;
+                            constellation.appendChild(line);
+                        }
                     }
+                    starsContainer.appendChild(constellation);
                 }
 
-                starsContainer.appendChild(constellation);
-            }
-
-            // Create divine text floating in space
-            for (let i = 0; i < 20; i++) {
-                const divineText = document.createElement('div');
-                divineText.className = 'divine-text';
-                divineText.textContent = ['SINHAA', 'DIVINE', 'CELESTIAL', 'STAR', 'GODDESS', 'ETERNAL', 'RADIANT', 'COSMIC', 'HEAVENLY', 'UNIQUE'][Math.floor(Math.random() * 10)];
-                divineText.style.left = `${Math.random() * 100}%`;
-                divineText.style.top = `${Math.random() * 100}%`;
-                divineText.style.animationDelay = `${Math.random() * 10}s`;
-                divineText.style.fontSize = `${Math.random() * 1 + 1}vw`;
-                divineText.style.opacity = Math.random() * 0.1 + 0.02;
-                starsContainer.appendChild(divineText);
+                // Floating divine text
+                for (let i = 0; i < 20; i++) {
+                    const divineText = document.createElement('div');
+                    divineText.className = 'divine-text';
+                    divineText.textContent = ['SINHAA', 'DIVINE', 'CELESTIAL', 'STAR', 'GODDESS', 'ETERNAL', 'RADIANT', 'COSMIC', 'HEAVENLY', 'UNIQUE'][Math.floor(Math.random() * 10)];
+                    divineText.style.left = `${Math.random() * 100}%`;
+                    divineText.style.top = `${Math.random() * 100}%`;
+                    divineText.style.animationDelay = `${Math.random() * 10}s`;
+                    divineText.style.fontSize = `${Math.random() * 1 + 1}vw`;
+                    divineText.style.opacity = Math.random() * 0.1 + 0.02;
+                    starsContainer.appendChild(divineText);
+                }
             }
 
             // Create shooting stars
             const createDivineShootingStar = () => {
                 const shootingStar = document.createElement('div');
                 shootingStar.classList.add('divine-shooting-star');
-
-                const size = Math.random() * 8 + 3;
-                const left = Math.random() * 100;
-                const top = Math.random() * 100;
-
-                shootingStar.style.width = `${size}vw`;
-                shootingStar.style.left = `${left}vw`;
-                shootingStar.style.top = `${top}vh`;
+                shootingStar.style.width = `${Math.random() * 8 + 3}vw`;
+                shootingStar.style.left = `${Math.random() * 100}vw`;
+                shootingStar.style.top = `${Math.random() * 100}vh`;
                 shootingStar.style.animationDuration = `${Math.random() * 4 + 3}s`;
                 shootingStar.style.boxShadow = `0 0 2vw #fff`;
-
                 document.body.appendChild(shootingStar);
 
-                setTimeout(() => {
-                    shootingStar.remove();
-                }, 8000);
+                setTimeout(() => shootingStar.remove(), 8000);
             };
 
-            // Create shooting stars periodically
             setInterval(createDivineShootingStar, 1000);
 
-            // Divine cursor implementation
+            // Cursor only on desktop
             if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
                 const cursor = document.querySelector('.divine-cursor');
                 const cursorFollower = document.querySelector('.divine-cursor-follower');
@@ -928,9 +938,7 @@
                     }, 60);
                 });
 
-                // Divine cursor effects on interactive elements
                 const interactiveElements = document.querySelectorAll('a, button, .divine-crafted-by, .divine-copyright');
-
                 interactiveElements.forEach(element => {
                     element.addEventListener('mouseenter', () => {
                         cursor.style.transform = 'translate(-50%, -50%) scale(2)';
@@ -946,9 +954,6 @@
                         cursor.style.boxShadow = '0 0 2.5vw #f5f0d0, 0 0 5vw rgba(245, 240, 208, 0.8)';
                     });
                 });
-            } else {
-                document.querySelector('.divine-cursor')?.remove();
-                document.querySelector('.divine-cursor-follower')?.remove();
             }
         });
     </script>

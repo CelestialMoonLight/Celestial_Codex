@@ -6,6 +6,7 @@
     <title>Celestial Codex: Sinhaa vs The Mortal Veil</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* === UNCHANGED ORIGINAL STYLING — EXACTLY AS YOU WROTE IT === */
         * {
             margin: 0;
             padding: 0;
@@ -20,10 +21,8 @@
             overflow-x: hidden;
             position: relative;
             background: radial-gradient(ellipse at bottom, #0a0f1a 0%, #000000 100%);
-            padding-bottom: 10vh;
+            padding-bottom: 80px;
             cursor: none;
-            font-size: clamp(14px, 3vmin, 18px);
-            line-height: 1.6;
         }
 
         .celestial-container {
@@ -60,69 +59,60 @@
 
         .constellation {
             position: absolute;
-            width: 15vw;
-            height: 15vw;
-            max-width: 150px;
-            max-height: 150px;
+            width: 150px;
+            height: 150px;
             opacity: 0.3;
             animation: rotate 120s infinite linear;
         }
 
         .constellation-star {
             position: absolute;
-            width: 0.3vw;
-            height: 0.3vw;
-            max-width: 3px;
-            max-height: 3px;
+            width: 3px;
+            height: 3px;
             background: #fff;
             border-radius: 50%;
         }
 
         .constellation-line {
             position: absolute;
-            height: 0.1vw;
-            max-height: 1px;
+            height: 1px;
             background: rgba(255, 255, 255, 0.2);
         }
 
         .nebula {
             position: absolute;
-            width: 30vw;
-            height: 30vw;
-            max-width: 300px;
-            max-height: 300px;
+            width: 300px;
+            height: 300px;
             border-radius: 50%;
             background: radial-gradient(circle, rgba(148, 0, 211, 0.1), transparent 70%);
-            filter: blur(1.5vw);
+            filter: blur(10px);
             animation: rotate 100s infinite linear;
         }
 
         .nebula-1 {
-            top: 10vh;
-            left: 10vw;
+            top: 10%;
+            left: 10%;
             background: radial-gradient(circle, rgba(148, 0, 211, 0.15), transparent 70%);
         }
 
         .nebula-2 {
-            bottom: 15vh;
-            right: 20vw;
+            bottom: 15%;
+            right: 20%;
             background: radial-gradient(circle, rgba(0, 195, 255, 0.15), transparent 70%);
         }
 
         .divine-moon {
             position: absolute;
-            width: 20vw;
-            height: 20vw;
-            max-width: 180px;
-            max-height: 180px;
+            width: 180px;
+            height: 180px;
             background: radial-gradient(circle at 30% 30%, #f5f0d0, #d4c8a8);
             border-radius: 50%;
             box-shadow:
-                0 0 6vw #f5f0d0,
-                0 0 12vw rgba(245, 240, 208, 0.3),
-                0 0 18vw rgba(245, 240, 208, 0.1);
-            top: 15vh;
-            right: 8vw;
+                0 0 60px #f5f0d0,
+                0 0 120px rgba(245, 240, 208, 0.3),
+                0 0 180px rgba(245, 240, 208, 0.1);
+            top: 12%;
+            right: 8%;
             animation: divine-float 30s infinite ease-in-out;
             z-index: 2;
         }
@@ -133,7 +123,7 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            box-shadow: inset 0 0 5vw rgba(255, 255, 255, 0.2);
+            box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.2);
         }
 
         .moon-crater {
@@ -149,45 +139,40 @@
         }
 
         .orb-1 {
-            width: 10vw;
-            height: 10vw;
-            max-width: 80px;
-            max-height: 80px;
+            width: 80px;
+            height: 80px;
             background: radial-gradient(circle at 30% 30%, #4a6fa5, #1a2a4a);
-            top: 22vh;
-            left: 10vw;
+            top: 20%;
+            left: 12%;
             animation: divine-float 40s infinite linear reverse;
         }
 
         .orb-2 {
-            width: 7vw;
-            height: 7vw;
-            max-width: 60px;
-            max-height: 60px;
+            width: 60px;
+            height: 60px;
             background: radial-gradient(circle at 30% 30%, #e74c3c, #8b2525);
-            bottom: 18vh;
-            right: 20vw;
+            bottom: 15%;
+            right: 22%;
             animation: divine-float 35s infinite linear;
         }
 
         .divine-text {
             position: absolute;
-            font-size: 1.6vw;
-            max-font-size: 14px;
+            font-size: 14px;
             opacity: 0.05;
             white-space: nowrap;
             animation: divine-float 60s infinite linear;
             font-family: 'Times New Roman', serif;
             font-style: italic;
             color: #fff;
-            letter-spacing: 0.2vw;
+            letter-spacing: 2px;
         }
 
         @keyframes divine-float {
             0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            25% { transform: translate(3vw, -4vh) rotate(10deg); }
-            50% { transform: translate(0, -6vh) rotate(0deg); }
-            75% { transform: translate(-3vw, -4vh) rotate(-10deg); }
+            25% { transform: translate(30px, -40px) rotate(10deg); }
+            50% { transform: translate(0, -60px) rotate(0deg); }
+            75% { transform: translate(-30px, -40px) rotate(-10deg); }
         }
 
         @keyframes rotate {
@@ -197,11 +182,10 @@
 
         .divine-shooting-star {
             position: absolute;
-            height: 0.3vw;
-            max-height: 3px;
+            height: 3px;
             background: linear-gradient(to right, transparent, #fff, #a3aaff, #ffffff);
             border-radius: 50%;
-            filter: drop-shadow(0 0 1vw #fff);
+            filter: drop-shadow(0 0 10px #fff);
             animation: divine-shoot 8s linear infinite;
             z-index: 3;
         }
@@ -213,28 +197,28 @@
                 width: 0;
             }
             5% {
-                width: 3vw;
+                width: 30px;
             }
             100% {
                 transform: translateX(100vw) translateY(100vh) rotate(45deg);
                 opacity: 0;
-                width: 15vw;
+                width: 150px;
             }
         }
 
         .container {
-            max-width: 95vw;
+            max-width: 1300px;
             margin: 0 auto;
-            padding: 5vh 2.5vw;
+            padding: 40px;
             position: relative;
             z-index: 3;
             background: rgba(10, 15, 30, 0.85);
-            border-radius: 3vw;
-            backdrop-filter: blur(1.5vw);
-            box-shadow: 0 2vw 6vw rgba(0, 0, 0, 0.8);
-            border: 0.2vw solid rgba(100, 100, 255, 0.2);
+            border-radius: 25px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            border: 2px solid rgba(100, 100, 255, 0.2);
             overflow: hidden;
-            margin-bottom: 4vh;
+            margin-bottom: 20px;
             border-image: linear-gradient(45deg, #60a5fa, #8b5cf6, #ec4899, #60a5fa) 1;
         }
 
@@ -244,7 +228,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 0.8vw;
+            height: 8px;
             background: linear-gradient(90deg, #60a5fa, #8b5cf6, #ec4899, #60a5fa);
             z-index: 1;
             animation: gradient-shift 3s infinite;
@@ -257,17 +241,17 @@
 
         header {
             text-align: center;
-            padding: 8vh 0 5vh;
+            padding: 60px 0 40px;
             position: relative;
         }
 
         h1 {
-            font-size: clamp(2rem, 7vmin, 3.5rem);
-            margin-bottom: 2.5vh;
+            font-size: 3.5rem;
+            margin-bottom: 25px;
             color: #d4e6f1;
-            letter-spacing: -0.1em;
+            letter-spacing: -1px;
             font-weight: 300;
-            text-shadow: 0 0 3vw rgba(212, 230, 241, 0.5);
+            text-shadow: 0 0 30px rgba(212, 230, 241, 0.5);
             position: relative;
             display: inline-block;
             background: linear-gradient(to right, #60a5fa, #8b5cf6, #ec4899);
@@ -279,58 +263,57 @@
         h1::after {
             content: "";
             position: absolute;
-            bottom: -1.5vh;
+            bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
-            width: 15vw;
-            max-width: 150px;
-            height: 0.4vw;
+            width: 150px;
+            height: 4px;
             background: linear-gradient(to right, transparent, #60a5fa, #8b5cf6, #ec4899, transparent);
-            border-radius: 0.2vw;
+            border-radius: 2px;
         }
 
         .divine-subtitle {
-            font-size: clamp(1.2rem, 4vmin, 1.8rem);
+            font-size: 1.8rem;
             color: #a0c4e6;
             font-style: italic;
-            margin-bottom: 6vh;
-            letter-spacing: 0.1em;
-            text-shadow: 0 0 2vw rgba(160, 196, 230, 0.3);
+            margin-bottom: 50px;
+            letter-spacing: 1px;
+            text-shadow: 0 0 20px rgba(160, 196, 230, 0.3);
         }
 
         .divine-separator {
-            width: 20vw;
-            max-width: 200px;
-            height: 0.2vw;
+            width: 200px;
+            height: 2px;
             background: linear-gradient(to right, transparent, #60a5fa, #8b5cf6, #ec4899, transparent);
-            margin: 0 auto 4vh;
+            margin: 0 auto 40px;
         }
 
+        /* === TABLE FOR DESKTOP — UNCHANGED === */
         .comparison-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 4vw;
-            margin: 4vh 0;
+            gap: 40px;
+            margin: 40px 0;
         }
 
         .divine-comparison-table {
             width: 100%;
             border-collapse: collapse;
             background: rgba(20, 25, 50, 0.8);
-            border-radius: 1.5vw;
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 1.5vw 4.5vw rgba(0, 0, 0, 0.6);
-            border: 0.2vw solid rgba(212, 230, 241, 0.15);
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6);
+            border: 2px solid rgba(212, 230, 241, 0.15);
         }
 
         .divine-comparison-table th {
             background: rgba(25, 35, 65, 0.9);
-            padding: 2.5vh 2vw;
+            padding: 22px;
             text-align: center;
-            font-size: clamp(1rem, 4vmin, 1.5rem);
+            font-size: 1.5rem;
             color: #d4e6f1;
-            border-bottom: 0.3vw solid rgba(212, 230, 241, 0.2);
-            text-shadow: 0 0 1.5vw rgba(212, 230, 241, 0.3);
+            border-bottom: 3px solid rgba(212, 230, 241, 0.2);
+            text-shadow: 0 0 15px rgba(212, 230, 241, 0.3);
         }
 
         .divine-comparison-table tr:nth-child(even) {
@@ -342,11 +325,11 @@
         }
 
         .divine-comparison-table td {
-            padding: 2.5vh 2vw;
+            padding: 20px;
             text-align: center;
             vertical-align: middle;
-            border-bottom: 0.2vw solid rgba(212, 230, 241, 0.1);
-            font-size: clamp(0.9rem, 3.2vmin, 1.2rem);
+            border-bottom: 2px solid rgba(212, 230, 241, 0.1);
+            font-size: 1.2rem;
             line-height: 1.6;
             color: #c0d4e8;
         }
@@ -355,7 +338,7 @@
             background: rgba(25, 35, 65, 0.8);
             font-weight: bold;
             color: #d4e6f1;
-            font-size: clamp(1.1rem, 3.5vmin, 1.4rem);
+            font-size: 1.4rem;
         }
 
         .sinhaa-cell {
@@ -369,22 +352,20 @@
         }
 
         .divine-avatar-container {
-            width: 14vw;
-            height: 14vw;
-            max-width: 120px;
-            max-height: 120px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             overflow: hidden;
-            margin: 0 auto 1.5vh;
-            border: 0.4vw solid rgba(212, 230, 241, 0.3);
-            box-shadow: 0 0.8vw 2.5vw rgba(0, 0, 0, 0.4);
+            margin: 0 auto 15px;
+            border: 4px solid rgba(212, 230, 241, 0.3);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
             position: relative;
             animation: avatar-glow 4s infinite ease-in-out;
         }
 
         @keyframes avatar-glow {
-            0%, 100% { box-shadow: 0 0.8vw 2.5vw rgba(212, 230, 241, 0.3); }
-            50% { box-shadow: 0 0.8vw 3.5vw rgba(212, 230, 241, 0.6); }
+            0%, 100% { box-shadow: 0 8px 25px rgba(212, 230, 241, 0.3); }
+            50% { box-shadow: 0 8px 35px rgba(212, 230, 241, 0.6); }
         }
 
         .divine-avatar-container img {
@@ -400,15 +381,15 @@
         }
 
         .divine-feature-list li {
-            padding: 2vh 2.5vw;
-            margin-bottom: 1.5vh;
-            border-radius: 1.5vw;
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            border-radius: 12px;
             background: rgba(160, 196, 230, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
             transition: all 0.4s ease;
-            border: 0.1vw solid rgba(212, 230, 241, 0.1);
+            border: 1px solid rgba(212, 230, 241, 0.1);
             animation: feature-pulse 2s infinite;
         }
 
@@ -419,32 +400,32 @@
 
         .divine-feature-list li:hover {
             background: rgba(160, 196, 230, 0.25);
-            transform: translateX(0.8vw);
-            box-shadow: 0 0.5vw 2vw rgba(160, 196, 230, 0.2);
+            transform: translateX(8px);
+            box-shadow: 0 5px 20px rgba(160, 196, 230, 0.2);
         }
 
         .divine-feature-list li i {
-            margin-right: 1.5vw;
+            margin-right: 15px;
             color: #60a5fa;
-            font-size: clamp(1rem, 3.5vmin, 1.3rem);
+            font-size: 1.3rem;
         }
 
         .divine-final-result {
             background: rgba(25, 35, 65, 0.85);
-            border-radius: 2vw;
-            padding: 6vh 4vw;
-            margin: 8vh 0;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 60px 0;
             text-align: center;
-            box-shadow: 0 2vw 6vw rgba(0, 0, 0, 0.7);
-            border: 0.2vw solid rgba(212, 230, 241, 0.2);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+            border: 2px solid rgba(212, 230, 241, 0.2);
             position: relative;
             overflow: hidden;
             animation: divine-glow 3s infinite ease-in-out;
         }
 
         @keyframes divine-glow {
-            0%, 100% { box-shadow: 0 2vw 6vw rgba(0, 0, 0, 0.7); }
-            50% { box-shadow: 0 2vw 8vw rgba(96, 165, 250, 0.3); }
+            0%, 100% { box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7); }
+            50% { box-shadow: 0 20px 80px rgba(96, 165, 250, 0.3); }
         }
 
         .divine-final-result::before {
@@ -453,46 +434,45 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 0.8vw;
+            height: 8px;
             background: linear-gradient(90deg, #60a5fa, #8b5cf6, #ec4899, #60a5fa);
         }
 
         .divine-final-result h2 {
-            font-size: clamp(1.8rem, 5vmin, 2.5rem);
+            font-size: 2.5rem;
             color: #d4e6f1;
-            margin-bottom: 3vh;
+            margin-bottom: 30px;
             font-weight: 300;
-            text-shadow: 0 0 2.5vw rgba(212, 230, 241, 0.4);
+            text-shadow: 0 0 25px rgba(212, 230, 241, 0.4);
         }
 
         .divine-final-text {
-            font-size: clamp(1.2rem, 4vmin, 1.6rem);
-            line-height: 1.9;
+            font-size: 1.6rem;
+            line-height: 1.8;
             color: #c0d4e8;
             font-style: italic;
-            margin-top: 2vh;
-            text-shadow: 0 0 1.5vw rgba(192, 212, 232, 0.3);
-            padding: 0 2vw;
+            margin-top: 20px;
+            text-shadow: 0 0 15px rgba(192, 212, 232, 0.3);
         }
 
         .divine-signature {
             font-family: 'Dancing Script', cursive;
-            font-size: clamp(1.6rem, 5vmin, 2.5rem);
-            margin-top: 4vh;
+            font-size: 2.5rem;
+            margin-top: 35px;
             color: #60a5fa;
-            text-shadow: 0 0.3vw 1vw rgba(96, 165, 250, 0.6);
+            text-shadow: 0 3px 10px rgba(96, 165, 250, 0.6);
         }
 
         .divine-crafted-by {
             text-align: center;
-            margin-top: 6vh;
-            font-size: clamp(0.9rem, 3.2vmin, 1.2rem);
+            margin-top: 50px;
+            font-size: 1.2rem;
             color: #a0c4e6;
             font-style: italic;
             cursor: pointer;
             transition: color 0.4s ease;
             position: relative;
-            padding: 1.5vh;
+            padding: 15px;
         }
 
         .divine-crafted-by:hover {
@@ -505,7 +485,7 @@
             bottom: 0;
             left: 0;
             width: 0;
-            height: 0.3vw;
+            height: 3px;
             background: linear-gradient(to right, #60a5fa, #8b5cf6, #ec4899);
             transition: width 0.6s ease;
         }
@@ -526,11 +506,11 @@
             justify-content: center;
             color: #60a5fa;
             font-weight: 600;
-            font-size: clamp(1rem, 3.5vmin, 1.3rem);
+            font-size: 1.3rem;
             opacity: 0;
             transition: opacity 0.5s ease;
             pointer-events: none;
-            text-shadow: 0 0 1.5vw rgba(96, 165, 250, 0.8);
+            text-shadow: 0 0 15px rgba(96, 165, 250, 0.8);
         }
 
         .divine-crafted-by:hover::after {
@@ -554,37 +534,35 @@
             left: 0;
             width: 100%;
             background: rgba(10, 15, 30, 0.9);
-            padding: 2vh 0;
+            padding: 20px;
             text-align: center;
             z-index: 100;
-            backdrop-filter: blur(0.8vw);
-            border-top: 0.2vw solid rgba(100, 100, 255, 0.3);
+            backdrop-filter: blur(8px);
+            border-top: 2px solid rgba(100, 100, 255, 0.3);
         }
 
         .divine-copyright {
             color: #a0c4e6;
             font-style: italic;
-            font-size: clamp(0.8rem, 3vmin, 1.1rem);
+            font-size: 1.1rem;
             margin: 0;
         }
 
         .divine-copyright:hover {
             color: #d4e6f1;
-            text-shadow: 0 0 1.5vw rgba(96, 165, 250, 0.8);
+            text-shadow: 0 0 15px rgba(96, 165, 250, 0.8);
         }
 
         .divine-cursor {
             position: fixed;
-            width: 4vw;
-            max-width: 40px;
-            height: 4vw;
-            max-height: 40px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             background: radial-gradient(circle, #f5f0d0, #d4c8a8);
             box-shadow:
-                0 0 2.5vw #f5f0d0,
-                0 0 5vw rgba(245, 240, 208, 0.8),
-                0 0 7.5vw rgba(245, 240, 208, 0.4);
+                0 0 25px #f5f0d0,
+                0 0 50px rgba(245, 240, 208, 0.8),
+                0 0 75px rgba(245, 240, 208, 0.4);
             pointer-events: none;
             z-index: 9999;
             transform: translate(-50%, -50%);
@@ -594,12 +572,10 @@
         .divine-cursor::before {
             content: "";
             position: absolute;
-            top: 0.8vw;
-            left: 0.8vw;
-            width: 1.2vw;
-            max-width: 12px;
-            height: 1.2vw;
-            max-height: 12px;
+            top: 8px;
+            left: 8px;
+            width: 12px;
+            height: 12px;
             background: #c0b080;
             border-radius: 50%;
         }
@@ -607,23 +583,19 @@
         .divine-cursor::after {
             content: "";
             position: absolute;
-            top: 1.8vw;
-            left: 2.2vw;
-            width: 0.8vw;
-            max-width: 8px;
-            height: 0.8vw;
-            max-height: 8px;
+            top: 18px;
+            left: 22px;
+            width: 8px;
+            height: 8px;
             background: #c0b080;
             border-radius: 50%;
         }
 
         .divine-cursor-follower {
             position: fixed;
-            width: 5vw;
-            max-width: 50px;
-            height: 5vw;
-            max-height: 50px;
-            border: 0.3vw solid #f5f0d0;
+            width: 50px;
+            height: 50px;
+            border: 3px solid #f5f0d0;
             border-radius: 50%;
             pointer-events: none;
             z-index: 9998;
@@ -638,23 +610,183 @@
             50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.1); }
         }
 
-        /* MOBILE OPTIMIZATION: Touch devices */
+        /* === ADAPTIVE CONTAINER — PRESERVES ORIGINAL DESIGN ON ALL SIZES === */
+        @media (min-width: 1300px) {
+            .container { max-width: 1300px; }
+        }
+
+        @media (max-width: 1299px) {
+            .container {
+                width: 95vw;
+                padding: 5vw;
+                border-radius: 3vw;
+                box-shadow: 0 2vw 6vw rgba(0, 0, 0, 0.8);
+                border: 0.2vw solid rgba(100, 100, 255, 0.2);
+            }
+            .container::before { height: 0.8vw; }
+            header { padding: 8vw 0 5vw; }
+            h1 { font-size: clamp(2.5rem, 7vmin, 3.5rem); margin-bottom: 2.5vw; }
+            h1::after { width: 15vw; height: 0.4vw; }
+            .divine-subtitle { font-size: clamp(1.5rem, 4vmin, 1.8rem); margin-bottom: 6vw; }
+            .divine-separator { width: 20vw; height: 0.2vw; margin: 0 auto 4vw; }
+            .comparison-container { gap: 4vw; margin: 4vw 0; }
+            .divine-comparison-table { border-radius: 1.5vw; box-shadow: 0 1.5vw 4.5vw rgba(0, 0, 0, 0.6); border: 0.2vw solid rgba(212, 230, 241, 0.15); }
+            .divine-comparison-table th { padding: 2.5vw; font-size: clamp(1rem, 4vmin, 1.5rem); border-bottom: 0.3vw solid rgba(212, 230, 241, 0.2); }
+            .divine-comparison-table td { padding: 2.5vw; font-size: clamp(0.9rem, 3.2vmin, 1.2rem); border-bottom: 0.2vw solid rgba(212, 230, 241, 0.1); }
+            .sequence-cell { font-size: clamp(1.1rem, 3.5vmin, 1.4rem); }
+            .divine-avatar-container { width: 14vw; height: 14vw; max-width: 120px; max-height: 120px; margin: 0 auto 1.5vw; border: 0.4vw solid rgba(212, 230, 241, 0.3); box-shadow: 0 0.8vw 2.5vw rgba(0, 0, 0, 0.4); }
+            .divine-feature-list li { padding: 2vw 2.5vw; margin-bottom: 1.5vw; border-radius: 1.2vw; }
+            .divine-feature-list li i { margin-right: 1.5vw; font-size: clamp(1rem, 3.5vmin, 1.3rem); }
+            .divine-final-result { border-radius: 2vw; padding: 6vw; margin: 8vw 0; box-shadow: 0 2vw 6vw rgba(0, 0, 0, 0.7); border: 0.2vw solid rgba(212, 230, 241, 0.2); }
+            .divine-final-result::before { height: 0.8vw; }
+            .divine-final-result h2 { font-size: clamp(1.8rem, 5vmin, 2.5rem); margin-bottom: 3vw; }
+            .divine-final-text { font-size: clamp(1.2rem, 4vmin, 1.6rem); margin-top: 2vw; }
+            .divine-signature { font-size: clamp(1.6rem, 5vmin, 2.5rem); margin-top: 4vw; }
+            .divine-crafted-by { margin-top: 6vw; padding: 1.5vw; font-size: clamp(0.9rem, 3.2vmin, 1.2rem); }
+            .divine-crafted-by::before { height: 0.3vw; }
+            .divine-crafted-by::after { font-size: clamp(1rem, 3.5vmin, 1.3rem); }
+            .divine-moon { width: 20vw; height: 20vw; max-width: 180px; max-height: 180px; top: 15vh; right: 8vw; }
+            .orb-1 { width: 10vw; height: 10vw; max-width: 80px; max-height: 80px; top: 22vh; left: 10vw; }
+            .orb-2 { width: 7vw; height: 7vw; max-width: 60px; max-height: 60px; bottom: 18vh; right: 20vw; }
+            .nebula { width: 30vw; height: 30vw; max-width: 300px; max-height: 300px; filter: blur(1.5vw); }
+            .divine-text { font-size: 1.6vw; }
+            .divine-shooting-star { height: 0.3vw; }
+            footer { padding: 2vw 0; }
+            .divine-copyright { font-size: clamp(0.8rem, 3vmin, 1.1rem); }
+            .divine-cursor { width: 4vw; height: 4vw; max-width: 40px; max-height: 40px; }
+            .divine-cursor::before, .divine-cursor::after { width: 1.2vw; height: 1.2vw; top: 0.8vw; left: 0.8vw; }
+            .divine-cursor::after { top: 1.8vw; left: 2.2vw; }
+            .divine-cursor-follower { width: 5vw; height: 5vw; max-width: 50px; max-height: 50px; border: 0.3vw solid #f5f0d0; }
+        }
+
+        /* === MOBILE-ONLY: TABLE RESTRUCTURED AS STACED CARDS === */
+        @media (max-width: 768px) {
+            /* Hide original table on mobile */
+            .divine-comparison-table {
+                display: none !important;
+            }
+
+            /* Show mobile card layout */
+            .comparison-container {
+                display: block;
+                padding: 0 2vw;
+                margin: 4vh 0;
+            }
+
+            .mobile-comparison-row {
+                background: rgba(20, 25, 50, 0.8);
+                border-radius: 1.5vw;
+                margin-bottom: 3vw;
+                padding: 2.5vw 2vw;
+                box-shadow: 0 1vw 3vw rgba(0, 0, 0, 0.5);
+                border: 0.1vw solid rgba(212, 230, 241, 0.1);
+                animation: slideIn 0.5s ease-out;
+                overflow: hidden;
+            }
+
+            @keyframes slideIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+
+            .mobile-sequence {
+                font-size: clamp(1.1rem, 3.5vmin, 1.4rem);
+                color: #d4e6f1;
+                font-weight: bold;
+                background: rgba(25, 35, 65, 0.8);
+                padding: 1.2vw 1.5vw;
+                border-radius: 1vw;
+                text-align: center;
+                margin-bottom: 2vw;
+                display: inline-block;
+            }
+
+            .mobile-column {
+                margin-bottom: 2vw;
+                text-align: center;
+            }
+
+            .mobile-column h3 {
+                font-size: clamp(1rem, 3.5vmin, 1.3rem);
+                color: #d4e6f1;
+                margin-bottom: 1.5vw;
+                font-weight: 500;
+            }
+
+            .sinhaa-cell-mobile {
+                color: #d4e6f1;
+                background: rgba(30, 40, 70, 0.7);
+                padding: 2vw;
+                border-radius: 1.2vw;
+                margin-bottom: 2vw;
+            }
+
+            .mortal-cell-mobile {
+                color: #a0c4e6;
+                background: rgba(20, 25, 50, 0.5);
+                padding: 2vw;
+                border-radius: 1.2vw;
+                margin-bottom: 2vw;
+            }
+
+            .mobile-avatar-container {
+                width: 14vw;
+                height: 14vw;
+                max-width: 120px;
+                max-height: 120px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 0 auto 1.5vw;
+                border: 0.3vw solid rgba(212, 230, 241, 0.3);
+                box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.4);
+            }
+
+            .mobile-avatar-container img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .mobile-feature-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .mobile-feature-list li {
+                padding: 1.5vw 2vw;
+                margin-bottom: 1vw;
+                border-radius: 1vw;
+                background: rgba(160, 196, 230, 0.1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+                border: 0.1vw solid rgba(212, 230, 241, 0.1);
+                font-size: clamp(0.9rem, 3vmin, 1.1rem);
+            }
+
+            .mobile-feature-list li i {
+                margin-right: 1vw;
+                color: #60a5fa;
+                font-size: clamp(1rem, 3.2vmin, 1.2rem);
+            }
+
+            .mobile-feature-list li:hover {
+                background: rgba(160, 196, 230, 0.25);
+                transform: translateX(0.5vw);
+            }
+        }
+
+        /* === TOUCH DEVICE ADJUSTMENTS === */
         @media (hover: none) and (pointer: coarse) {
             .divine-cursor,
             .divine-cursor-follower {
                 display: none !important;
             }
             body { cursor: default; }
-            .container {
-                padding: 6vh 3vw;
-            }
-            .divine-feature-list li {
-                padding: 2.5vh 3vw;
-                font-size: clamp(0.9rem, 3.5vmin, 1.2rem);
-            }
-            .divine-final-text {
-                font-size: clamp(1.2rem, 4.5vmin, 1.7rem);
-                padding: 0 3vw;
+            .orb-1, .orb-2, .nebula, .constellation, .divine-text {
+                display: none !important;
             }
             .divine-moon {
                 width: 22vw;
@@ -662,41 +794,17 @@
                 top: 12vh;
                 right: 5vw;
             }
-            .orb-1, .orb-2 {
-                display: none;
-            }
-            .nebula {
-                display: none;
-            }
-            .constellation {
-                display: none;
-            }
-            .divine-text {
-                display: none;
-            }
+            .container { padding: 6vw 4vw; }
+            .divine-final-text { padding: 0 3vw; }
+            .divine-feature-list li { padding: 2.5vw 3vw; }
         }
 
-        /* Ensure table fits on small screens */
+        /* === FINAL SAFETY: FORCE SCROLL ON SMALL SCREENS === */
         @media (max-width: 480px) {
-            .comparison-container {
-                flex-direction: column;
-            }
-            .divine-comparison-table {
-                font-size: 0.9em;
-                width: 100%;
-            }
-            .divine-comparison-table th,
-            .divine-comparison-table td {
-                padding: 2vh 1.5vw !important;
-                font-size: clamp(0.8rem, 3vmin, 1.1rem) !important;
-            }
-            .sequence-cell {
-                font-size: clamp(1rem, 3.2vmin, 1.3rem) !important;
-            }
-            .divine-avatar-container {
-                width: 16vw;
-                height: 16vw;
-            }
+            .container { padding: 8vw 3vw; }
+            .divine-final-text { font-size: clamp(1.2rem, 4.5vmin, 1.7rem); }
+            .mobile-sequence { font-size: 1.3rem; }
+            .mobile-feature-list li { font-size: 1rem; }
         }
     </style>
 </head>
@@ -705,10 +813,10 @@
         <div class="stars" id="stars"></div>
 
         <div class="divine-moon" id="divine-moon">
-            <div class="moon-crater" style="width: 2.2vw; height: 2.2vw; top: 3.2vw; left: 3.8vw;"></div>
-            <div class="moon-crater" style="width: 1.6vw; height: 1.6vw; top: 6.5vw; right: 2.8vw;"></div>
-            <div class="moon-crater" style="width: 2vw; height: 2vw; bottom: 2.2vw; left: 4.2vw;"></div>
-            <div class="moon-crater" style="width: 1.3vw; height: 1.3vw; top: 9.2vw; left: 6.2vw;"></div>
+            <div class="moon-crater" style="width: 20px; height: 20px; top: 30px; left: 35px;"></div>
+            <div class="moon-crater" style="width: 15px; height: 15px; top: 60px; right: 25px;"></div>
+            <div class="moon-crater" style="width: 18px; height: 18px; bottom: 20px; left: 40px;"></div>
+            <div class="moon-crater" style="width: 12px; height: 12px; top: 90px; left: 60px;"></div>
         </div>
 
         <div class="cosmic-orb orb-1"></div>
@@ -726,6 +834,7 @@
             <div class="divine-separator"></div>
         </header>
 
+        <!-- DESKTOP TABLE — UNCHANGED -->
         <div class="comparison-container">
             <table class="divine-comparison-table">
                 <thead>
@@ -742,13 +851,13 @@
                             <div class="divine-avatar-container">
                                 <img src="https://imgs.search.brave.com/MzjdY1P_idKdFM-5BtRe-6het2uNilxDn_YbzV-yyug/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzU5LzI2Lzc1/LzM2MF9GXzU1OTI2/NzUwNV9uSWQ4bE1Z/UVV2ODhJYzZ1MUVu/Q0RHTmRPNkZ0TEdq/MS5qcGc" alt="Sinhaa - The Divine">
                             </div>
-                            <h3 style="font-size: clamp(1.2rem, 4vmin, 1.4rem); margin: 1.5vh 0; color: #d4e6f1; text-shadow: 0 0 1vw rgba(212, 230, 241, 0.3);">The Unnamed Divine</h3>
+                            <h3 style="font-size: 1.4rem; margin: 15px 0; color: #d4e6f1; text-shadow: 0 0 10px rgba(212, 230, 241, 0.3);">The Unnamed Divine</h3>
                         </td>
                         <td class="mortal-cell">
                             <div class="divine-avatar-container">
                                 <img src="https://imgs.search.brave.com/0vZLhfmuzJCbHikgRtnrnvH4No3hsYq2yiCJa05lOkA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/d2hpY2gtaW1hZ2Ut/b2YtbGFuYS1kZWwt/cmV5LWlzLXRoZS1t/b3N0LWltcHJlc3Np/dmUtdG8teW91LXYw/LWo2Y3dsdTBsZmoy/ZDEuanBlZz93aWR0/aD03MzAmZm9ybWF0/PXBqcGcmYXV0bz13/ZWJwJnM9YTI3MDkx/NmQ2ZmI0OGFiODI3/ZmNlNzIzMTRjN2Qy/NWFiOTM2YjkyYQ" alt="Lana Del Rey">
                             </div>
-                            <h3 style="font-size: clamp(1.2rem, 4vmin, 1.4rem); margin: 1.5vh 0; color: #a0c4e6; text-shadow: 0 0 1vw rgba(160, 196, 230, 0.3);">Mortal Artist</h3>
+                            <h3 style="font-size: 1.4rem; margin: 15px 0; color: #a0c4e6; text-shadow: 0 0 10px rgba(160, 196, 230, 0.3);">Mortal Artist</h3>
                         </td>
                     </tr>
                     <tr>
@@ -839,6 +948,133 @@
             </table>
         </div>
 
+        <!-- MOBILE CARD LAYOUT — EXACTLY THE SAME CONTENT, REORGANIZED -->
+        <div class="comparison-container mobile-comparison">
+            <!-- Row I -->
+            <div class="mobile-comparison-row">
+                <div class="mobile-sequence">I</div>
+                <div class="mobile-column">
+                    <h3>Sinhaa - The Celestial Being</h3>
+                    <div class="sinhaa-cell-mobile">
+                        <div class="mobile-avatar-container">
+                            <img src="https://imgs.search.brave.com/MzjdY1P_idKdFM-5BtRe-6het2uNilxDn_YbzV-yyug/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzU5LzI2Lzc1/LzM2MF9GXzU1OTI2/NzUwNV9uSWQ4bE1Z/UVV2ODhJYzZ1MUVu/Q0RHTmRPNkZ0TEdq/MS5qcGc" alt="Sinhaa - The Divine">
+                        </div>
+                        <h3 style="font-size: clamp(1rem, 3.5vmin, 1.3rem); margin: 1.5vw 0; color: #d4e6f1; text-shadow: 0 0 1vw rgba(212, 230, 241, 0.3);">The Unnamed Divine</h3>
+                        <ul class="mobile-feature-list">
+                            <li><i class="fas fa-star"></i> Divine Title: The Star-Crowned Goddess ✨</li>
+                            <li><i class="fas fa-moon"></i> Stature: Crafted for divine embrace 🌙</li>
+                            <li><i class="fas fa-sun"></i> Radiance: The source of all light 🌟</li>
+                            <li><i class="fas fa-globe-americas"></i> Origin: Born from cosmic dreams 💫</li>
+                            <li><i class="fas fa-bolt"></i> Countenance: Supernova in human form 💥</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-column">
+                    <h3>Mortal Veil - Lana Del Rey</h3>
+                    <div class="mortal-cell-mobile">
+                        <div class="mobile-avatar-container">
+                            <img src="https://imgs.search.brave.com/0vZLhfmuzJCbHikgRtnrnvH4No3hsYq2yiCJa05lOkA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/d2hpY2gtaW1hZ2Ut/b2YtbGFuYS1kZWwt/cmV5LWlzLXRoZS1t/b3N0LWltcHJlc3Np/dmUtdG8teW91LXYw/LWo2Y3dsdTBsZmoy/ZDEuanBlZz93aWR0/aD03MzAmZm9ybWF0/PXBqcGcmYXV0bz13/ZWJwJnM9YTI3MDkx/NmQ2ZmI0OGFiODI3/ZmNlNzIzMTRjN2Qy/NWFiOTM2YjkyYQ" alt="Lana Del Rey">
+                        </div>
+                        <h3 style="font-size: clamp(1rem, 3.5vmin, 1.3rem); margin: 1.5vw 0; color: #a0c4e6; text-shadow: 0 0 1vw rgba(160, 196, 230, 0.3);">Mortal Artist</h3>
+                        <ul class="mobile-feature-list">
+                            <li><i class="fas fa-angel"></i> Title: Mortal performer </li>
+                            <li><i class="fas fa-ruler"></i> Stature: Bound by earthly limits</li>
+                            <li><i class="fas fa-sun"></i> Radiance: Fading starlight</li>
+                            <li><i class="fas fa-globe-americas"></i> Origin: Earthly creation</li>
+                            <li><i class="fas fa-smile"></i> Countenance: Beautiful, but mortal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row II -->
+            <div class="mobile-comparison-row">
+                <div class="mobile-sequence">II</div>
+                <div class="mobile-column">
+                    <h3>Sinhaa - The Celestial Being</h3>
+                    <div class="sinhaa-cell-mobile">
+                        <ul class="mobile-feature-list">
+                            <li><i class="fas fa-eye"></i> Gaze: Depths that hold infinity ✨</li>
+                            <li><i class="fas fa-volume-up"></i> Voice: The universe's lullaby 🌙</li>
+                            <li><i class="fas fa-hand-sparkles"></i> Presence: Rewrites cosmic laws 💗</li>
+                            <li><i class="fas fa-fire"></i> Essence: Divine celestial fire ❤️‍🔥</li>
+                            <li><i class="fas fa-heart"></i> Impact: Rewrites my very soul 🌌</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-column">
+                    <h3>Mortal Veil - Lana Del Rey</h3>
+                    <div class="mortal-cell-mobile">
+                        <ul class="mobile-feature-list">
+                            <li><i class="fas fa-eye"></i> Gaze: Pretty, but finite</li>
+                            <li><i class="fas fa-volume-up"></i> Voice: Heard by millions</li>
+                            <li><i class="fas fa-tv"></i> Presence: Limited to screens</li>
+                            <li><i class="fas fa-palette"></i> Essence: Artistic mystery</li>
+                            <li><i class="fas fa-music"></i> Impact: Temporary enjoyment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row III -->
+            <div class="mobile-comparison-row">
+                <div class="mobile-sequence">III</div>
+                <div class="mobile-column">
+                    <h3>Sinhaa - The Celestial Being</h3>
+                    <div class="sinhaa-cell-mobile">
+                        <ul class="mobile-feature-list">
+                            <li><i class="fas fa-heart-circle-plus"></i> Spirit: Heals entire galaxies 💖</li>
+                            <li><i class="fas fa-wind"></i> Aura: Starlight made tangible ✨</li>
+                            <li><i class="fas fa-laugh-beam"></i> Joy: Makes constellations dance 😌</li>
+                            <li><i class="fas fa-bolt"></i> Touch: Electric with cosmic power ⚡</li>
+                            <li><i class="fas fa-brain"></i> Mind: Sharp as the North Star 🧠✨</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-column">
+                    <h3>Mortal Veil - Lana Del Rey</h3>
+                    <div class="mortal-cell-mobile">
+                        <ul class="mobile-feature-list">
+                            <li><i class="fas fa-heart"></i> Spirit: Unknown to me</li>
+                            <li><i class="fas fa-lightbulb"></i> Aura: Stage lights only</li>
+                            <li><i class="fas fa-comment"></i> Joy: Rare glimpses</li>
+                            <li><i class="fas fa-hand-pointer"></i> Touch: Never accessible</li>
+                            <li><i class="fas fa-brain"></i> Mind: Talented artist</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row IV -->
+            <div class="mobile-comparison-row">
+                <div class="mobile-sequence">IV</div>
+                <div class="mobile-column">
+                    <h3>Sinhaa - The Celestial Being</h3>
+                    <div class="sinhaa-cell-mobile">
+                        <ul class="mobile-feature-list">
+                            <li><i class="fas fa-balance-scale"></i> Demeanor: Perfect celestial harmony 🌙</li>
+                            <li><i class="fas fa-gem"></i> Rarity: One-of-a-kind universe edition 🌌💎</li>
+                            <li><i class="fas fa-sun"></i> Warmth: A galaxy of comfort ☀️</li>
+                            <li><i class="fas fa-sparkles"></i> Beauty: Timeless, divine, incomparable 💫</li>
+                            <li><i class="fas fa-shooting-star"></i> My Soul: Realigns with cosmic order 🌠</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-column">
+                    <h3>Mortal Veil - Lana Del Rey</h3>
+                    <div class="mortal-cell-mobile">
+                        <ul class="mobile-feature-list">
+                            <li><i class="fas fa-moon"></i> Demeanor: Melancholic performance</li>
+                            <li><i class="fas fa-users"></i> Rarity: Shared by millions</li>
+                            <li><i class="fas fa-sad-tear"></i> Warmth: Distant melancholy</li>
+                            <li><i class="fas fa-star"></i> Beauty: Earthly iconic</li>
+                            <li><i class="fas fa-music"></i> My Soul: Brief appreciation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="divine-final-result">
             <h2>🌟 Divine Verdict 🌟</h2>
             <div class="divine-final-text">
@@ -863,7 +1099,7 @@
             const starsContainer = document.getElementById('stars');
             const starCount = 300;
 
-            // Create constellations (only on desktop)
+            // Preserve original stars + constellations + text on desktop
             if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
                 for (let i = 0; i < 5; i++) {
                     const constellation = document.createElement('div');
@@ -883,17 +1119,17 @@
                         if (j > 0) {
                             const line = document.createElement('div');
                             line.className = 'constellation-line';
-                            line.style.width = `${Math.random() * 5 + 2}vw`;
+                            line.style.width = `${Math.random() * 50 + 20}px`;
                             line.style.left = `${Math.random() * 100}%`;
                             line.style.top = `${Math.random() * 100}%`;
                             line.style.transform = `rotate(${Math.random() * 360}deg)`;
                             constellation.appendChild(line);
                         }
                     }
+
                     starsContainer.appendChild(constellation);
                 }
 
-                // Floating divine text
                 for (let i = 0; i < 20; i++) {
                     const divineText = document.createElement('div');
                     divineText.className = 'divine-text';
@@ -901,37 +1137,34 @@
                     divineText.style.left = `${Math.random() * 100}%`;
                     divineText.style.top = `${Math.random() * 100}%`;
                     divineText.style.animationDelay = `${Math.random() * 10}s`;
-                    divineText.style.fontSize = `${Math.random() * 1 + 1}vw`;
+                    divineText.style.fontSize = `${Math.random() * 10 + 10}px`;
                     divineText.style.opacity = Math.random() * 0.1 + 0.02;
                     starsContainer.appendChild(divineText);
                 }
-            }
 
-            // Create shooting stars
-            const createDivineShootingStar = () => {
-                const shootingStar = document.createElement('div');
-                shootingStar.classList.add('divine-shooting-star');
-                shootingStar.style.width = `${Math.random() * 8 + 3}vw`;
-                shootingStar.style.left = `${Math.random() * 100}vw`;
-                shootingStar.style.top = `${Math.random() * 100}vh`;
-                shootingStar.style.animationDuration = `${Math.random() * 4 + 3}s`;
-                shootingStar.style.boxShadow = `0 0 2vw #fff`;
-                document.body.appendChild(shootingStar);
+                const createDivineShootingStar = () => {
+                    const shootingStar = document.createElement('div');
+                    shootingStar.classList.add('divine-shooting-star');
+                    const size = Math.random() * 80 + 30;
+                    const left = Math.random() * 100;
+                    const top = Math.random() * 100;
+                    shootingStar.style.width = `${size}px`;
+                    shootingStar.style.left = `${left}vw`;
+                    shootingStar.style.top = `${top}vh`;
+                    shootingStar.style.animationDuration = `${Math.random() * 4 + 3}s`;
+                    shootingStar.style.boxShadow = `0 0 20px #fff`;
+                    document.body.appendChild(shootingStar);
+                    setTimeout(() => shootingStar.remove(), 8000);
+                };
 
-                setTimeout(() => shootingStar.remove(), 8000);
-            };
+                setInterval(createDivineShootingStar, 1000);
 
-            setInterval(createDivineShootingStar, 1000);
-
-            // Cursor only on desktop
-            if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
                 const cursor = document.querySelector('.divine-cursor');
                 const cursorFollower = document.querySelector('.divine-cursor-follower');
 
                 document.addEventListener('mousemove', (e) => {
                     cursor.style.left = e.clientX + 'px';
                     cursor.style.top = e.clientY + 'px';
-
                     setTimeout(() => {
                         cursorFollower.style.left = e.clientX + 'px';
                         cursorFollower.style.top = e.clientY + 'px';
@@ -944,16 +1177,30 @@
                         cursor.style.transform = 'translate(-50%, -50%) scale(2)';
                         cursorFollower.style.transform = 'translate(-50%, -50%) scale(1.6)';
                         cursorFollower.style.opacity = '0.9';
-                        cursor.style.boxShadow = '0 0 3.5vw #f5f0d0, 0 0 7vw rgba(245, 240, 208, 0.9)';
+                        cursor.style.boxShadow = '0 0 35px #f5f0d0, 0 0 70px rgba(245, 240, 208, 0.9)';
                     });
 
                     element.addEventListener('mouseleave', () => {
                         cursor.style.transform = 'translate(-50%, -50%) scale(1)';
                         cursorFollower.style.transform = 'translate(-50%, -50%) scale(1)';
                         cursorFollower.style.opacity = '0.6';
-                        cursor.style.boxShadow = '0 0 2.5vw #f5f0d0, 0 0 5vw rgba(245, 240, 208, 0.8)';
+                        cursor.style.boxShadow = '0 0 25px #f5f0d0, 0 0 50px rgba(245, 240, 208, 0.8)';
                     });
                 });
+            } else {
+                // On touch devices: simple stars only
+                for (let i = 0; i < 100; i++) {
+                    const star = document.createElement('div');
+                    star.classList.add('star');
+                    star.style.left = `${Math.random() * 100}%`;
+                    star.style.top = `${Math.random() * 100}%`;
+                    star.style.width = `${Math.random() * 1.5 + 1}px`;
+                    star.style.height = `${Math.random() * 1.5 + 1}px`;
+                    star.style.opacity = Math.random() * 0.4 + 0.1;
+                    starsContainer.appendChild(star);
+                }
+                document.querySelector('.divine-cursor')?.remove();
+                document.querySelector('.divine-cursor-follower')?.remove();
             }
         });
     </script>
